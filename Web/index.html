@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Voxel Sandbox Game</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.babylonjs.com/babylon.js"></script>
+    <script src="https://cdn.babylonjs.com/loaders/babylonjs.loaders.min.js"></script>
+</head>
+<body>
+    <canvas id="renderCanvas"></canvas>
+    <div id="ui-container">
+        <div id="joystick-container">
+            <canvas id="joystick-canvas"></canvas>
+        </div>
+        <div id="buttons-container">
+            <button id="jump-btn" class="control-btn jump-btn">JUMP</button>
+            <button id="crouch-btn" class="control-btn crouch-btn">CROUCH</button>
+        </div>
+        <div id="info-text">TAP CENTER = PLACE | LONG PRESS = BREAK</div>
+        <div id="fps-counter">FPS: 0</div>
+    </div>
+
+    <script src="js/blocks.js"></script>
+    <script src="js/terrain.js"></script>
+    <script src="js/world.js"></script>
+    <script src="js/player.js"></script>
+    <script src="js/ui.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
